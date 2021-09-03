@@ -4,20 +4,20 @@ import requests
 import urllib
 import pandas as pd
 
-#Background
-# st.markdown(
-#     """
-#     <style>
-#     .reportview-container {
-#         background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/1200px-Above_Gotham.jpg")
-#     }
-#    .sidebar .sidebar-content {
-#         background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/1200px-Above_Gotham.jpg")
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True
-# )
+Background
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/1200px-Above_Gotham.jpg")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/1200px-Above_Gotham.jpg")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.set_page_config(
     page_title = 'Vrum Vruuuum',
@@ -40,7 +40,7 @@ date = st.sidebar.date_input(
     "Date:",
     datetime.date(2021, 9, 6))
 
-time = t = st.sidebar.time_input(
+time = st.sidebar.time_input(
     'Time:',
     datetime.time(8, 45))
 
