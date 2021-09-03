@@ -4,27 +4,27 @@ import requests
 import urllib
 import pandas as pd
 
-Background
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/1200px-Above_Gotham.jpg")
-    }
-   .sidebar .sidebar-content {
-        background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Above_Gotham.jpg/1200px-Above_Gotham.jpg")
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 st.set_page_config(
     page_title = 'Vrum Vruuuum',
     page_icon = '🇺🇸',
     layout = 'wide',
     initial_sidebar_state = 'auto' # collapsed
 )
+
+#Background
+# st.markdown(
+#     """
+#     <style>
+#     .reportview-container {
+#         background: url("https://www.arnbtaxi.com/wp-content/uploads/TAXI.jpg")
+#     }
+#    .sidebar .sidebar-content {
+#         background: url("https://www.arnbtaxi.com/wp-content/uploads/TAXI.jpg")
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 #Title
 
