@@ -16,10 +16,10 @@ st.set_page_config(
 #     """
 #     <style>
 #     .reportview-container {
-#         background: url("https://www.arnbtaxi.com/wp-content/uploads/TAXI.jpg")
+#         background-color: #92a8d1
 #     }
 #    .sidebar .sidebar-content {
-#         background: url("https://www.arnbtaxi.com/wp-content/uploads/TAXI.jpg")
+#         background-color: #92a8d1
 #     }
 #     </style>
 #     """,
@@ -32,15 +32,15 @@ st.title('Taxi Fare Prediction in New York')
 
 st.sidebar.write(' ## Enter some features to predict your fare correctly.')
 
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.sidebar.columns((1.5, 1))
 
 # Date and Time
 
-date = st.sidebar.date_input(
+date = col1.date_input(
     "Date:",
     datetime.date(2021, 9, 6))
 
-time = st.sidebar.time_input(
+time = col2.time_input(
     'Time:',
     datetime.time(8, 45))
 
